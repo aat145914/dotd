@@ -52,35 +52,6 @@
     <p class="navy"> &nbsp<b>Acknowlegements / Credits</b> <a class="navy"></a></p>
     <p class="navyfont"> &nbspComing soon!</p>
   <div><center class="navyfont"> <b>Website visit count:</b></center></div>
-  <center class="navyfont"><div id="visits">...</div></center>
-  </script>
-  <script>
-  async function fetchData() {
-  
-      try {
-          const response = await fetch("https://api.api-ninjas.com/v1/counter?id=aat145914-dotd&hit=true", {
-          method: 'GET',
-          mode: 'cors',
-          cache: 'default',
-          'Access-Control-Allow-Origin': '*', // Allow all origins
-          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-          headers: {
-            "Content-Type": "application/json",
-            }
-          }); 
-  
-          // Replace with your API endpoint
-          if (!response.ok) {
-             throw new Error('Network response was not ok ' + response.statusText);
-          }
-          const data = await response.json();
-  
-          document.querySelector("#visits").textContent = data.value
-      } catch (error) {
-          document.querySelector("#visits").textContent = 'Error: ' + error.message;
-      }
-  }
-  window.onload = fetchData;
+  <div><center class="navyfont"><a href="https://hits.sh/github.com/aat145914.github.io/dotd/hits/"><img alt="Hits" src="https://hits.sh/github.com/aat145914.github.io/dotd/hits.svg"/></a></center></div>
   </script>
 </html>
